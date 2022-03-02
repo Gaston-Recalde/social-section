@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.container{
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+
+.title{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    text-align:center;
+}
+
+p{
+    color: hsl(303, 10%, 53%);
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.reviews{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    background: hsl(300, 24%, 96%);
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    height: 70px;
+}
+
+.review__p{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+.card{
+    padding: 30px;
+    margin-bottom: 17px;
+    border-radius: 10px;
+    background: hsl(300, 43%, 22%);
+}
+
+.card__user{
+    display: flex;
+    align-items: center;
+}
+
+.user__img{
+    border-radius: 50%;
+    height: 45px;
+}
+
+.user__data{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 0;
+    margin-left: 25px;
+}
+
+span{
+    font-size: 14px;
+    color: hsl(333, 80%, 67%);
+}
+
+.card__p{
+    margin-top: 30px;
+    color: hsl(300, 24%, 96%);
+    font-weight: 400;
+    font-size: 13px;
+    text-align: start;
+    letter-spacing: 1.2;
+    line-height: 1.5;
+}
+
+@media ( min-width: 1200px) { 
+
+    .container{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .header{
+        width: 470px;
+    }
+    .title{
+        font-size: 55px;
+        text-align: start;
+    }
+    .header > p{
+        text-align: start;
+    }
+    .reviews{
+        height: 250px;
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 25px;
+    }
+    
+    .review{
+        display: flex;
+        width: 450px;
+        flex-direction: row;
+        background: hsl(300, 24%, 96%);
+        border-radius: 10px;
+        height: 60px;
+    }
+
+    .review_1{
+        align-self: flex-start;
+    }
+    .review_2{
+        align-self: center;
+    }
+    .review_3{
+        align-self: flex-end;
+    }
+    
+    .review__p{
+        color: hsl(300, 43%, 22%);
+        font-weight: 700;
+        font-size: 13px;
+    }
+    .cards{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 60px;
+        justify-content: space-between;
+    }
+    
+    .card{
+        padding: 35px;
+        border-radius: 10px;
+        background: hsl(300, 43%, 22%);
+        height: 250px;
+        width: 360px;
+    }
+
+    .card_1{
+        align-self: flex-start;
+    }
+
+    .card_2{
+        align-self: center;
+    }
+
+    .card_3{
+        align-self: flex-end;
+    }
+    
+    .card__p{
+        margin-top: 30px;
+        color: hsl(300, 24%, 96%);
+        font-weight: 400;
+        font-size: 13px;
+        text-align: start;
+        letter-spacing: 1.2;
+        line-height: 1.8;
+    }
+}
