@@ -4,11 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .container{
@@ -17,6 +23,7 @@ body{
     flex-direction: column;
     margin: 0 auto;
     margin-top: 75px;
+    margin-bottom: 75px;
 }
 
 .title{
@@ -107,22 +114,27 @@ span{
 @media ( min-width: 1200px) { 
 
     .container{
-        width: 80%;
+        width: 92%;
+        max-width: 1200px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
+   
     .header{
         width: 470px;
     }
+
     .title{
         font-size: 55px;
         text-align: start;
     }
+
     .header > p{
         text-align: start;
     }
+
     .reviews{
         height: 250px;
         width: 550px;
@@ -144,9 +156,11 @@ span{
     .review_1{
         align-self: flex-start;
     }
+
     .review_2{
         align-self: center;
     }
+
     .review_3{
         align-self: flex-end;
     }
@@ -156,6 +170,7 @@ span{
         font-weight: 700;
         font-size: 13px;
     }
+
     .cards{
         width: 100%;
         height: 300px;
@@ -194,4 +209,16 @@ span{
         letter-spacing: 1.2;
         line-height: 1.8;
     }
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
