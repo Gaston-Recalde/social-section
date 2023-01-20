@@ -26,7 +26,7 @@ body{
     margin-bottom: 75px;
 }
 
-.title{
+.header__title{
     color: hsl(300, 43%, 22%);
     font-weight: 700;
     text-align:center;
@@ -126,7 +126,7 @@ span{
         width: 470px;
     }
 
-    .title{
+    .header__title{
         font-size: 55px;
         text-align: start;
     }
@@ -153,15 +153,15 @@ span{
         height: 60px;
     }
 
-    .review_1{
+    .review-1{
         align-self: flex-start;
     }
 
-    .review_2{
+    .review-2{
         align-self: center;
     }
 
-    .review_3{
+    .review-3{
         align-self: flex-end;
     }
     
@@ -188,15 +188,15 @@ span{
         width: 360px;
     }
 
-    .card_1{
+    .card-1{
         align-self: flex-start;
     }
 
-    .card_2{
+    .card-2{
         align-self: center;
     }
 
-    .card_3{
+    .card-3{
         align-self: flex-end;
     }
     
